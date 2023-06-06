@@ -1,0 +1,15 @@
+install 
+composer require barryvdh/laravel-dompdf
+
+di direktri "config/app.php" tambahkan ini :
+'providers' => [
+	....
+	Barryvdh\DomPDF\ServiceProvider::class,
+],
+ 
+  
+'aliases' => [
+	....
+	'PDF' => Barryvdh\DomPDF\Facade::class,
+] 
+
